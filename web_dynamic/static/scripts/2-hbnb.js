@@ -21,7 +21,7 @@ $(document).ready(function () {
   });
 
   const apiStatus = $('DIV#api_status');
-  $.ajax('http://52.91.146.214:5001/api/v1/status/').done(function (data) {
+  $.ajax('http://54.237.56.74:5001/api/v1/status/').done(function (data) {
     if (data.status === 'OK') {
       apiStatus.addClass('available');
     } else {
